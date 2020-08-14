@@ -1,0 +1,212 @@
+*{
+  box-sizing:border-box;
+}
+.body{
+  margin:0;
+  padding:0;
+  scroll-behavior: smooth;
+
+}
+.App{  
+  width:100%;
+  height:auto;
+  /*background-image: url('./images/lerone-pieters-XnBrDrAJaoo-unsplash.jpg');*/
+  background: linear-gradient(rgba(37, 37, 37, 0.747),rgba(31, 31, 31, 0.5)),url('./Components/images/lerone-pieters-XnBrDrAJaoo-unsplash.jpg');
+ /* background-color:#3B3E3D;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+  background-attachment: fixed;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+}
+.header{
+  color:#fff;
+  width:100%;
+  min-width: 15vh;
+ /* background-color:rgb(73, 71, 71);*/
+  margin:0;
+ /*background: linear-gradient(rgba(172, 169, 169, 0.747),rgba(172, 171, 171, 0.5));*/
+  border-bottom:1px solid #fff;
+ /* border-radius: 25px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+}
+.header span{
+  font-size:65px;
+  letter-spacing:3px;
+  font-family: 'Black Ops One'
+}
+#newyorkimg{
+  width:80%;
+  height:100%;
+}
+.previewImg{
+  width:40vw;
+  height:50vh;
+}
+.container-fluid{
+  padding:0px;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.header ul li{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 20px;
+  color:#fff;
+  justify-content: center;
+}
+.header ul li a{
+  color:#fff;
+  text-decoration: none;
+  margin-right:100px;
+  margin-top: 20px;
+  transition:0.5s ease-in-out;
+}
+.search input{
+  padding:5px;
+  border:1px solid transparent;
+  border-radius:2px;
+  width:800px;
+  margin: 5px;
+}
+.search .btn{
+  width:150px;
+}
+.mainSection{
+  top:15vh;
+  width:97vw;
+  min-height: 100vh;
+  height:auto;
+  color:#000;
+  margin:10px;
+  /*background: linear-gradient(rgba(82, 80, 80, 0.747),rgba(73, 72, 72, 0.5));*/
+  border-bottom:1px solid transparent;
+  border-radius:20px;
+  padding:5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+.mainSection .contents{
+  color:#fff;
+  background-color:#0f0f11;
+  border-bottom:1px solid transparent;
+  border-radius:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainSection .homeContents{
+  color:#fff;
+  background-color:#0f0f11;
+  border-bottom:1px solid transparent;
+  border-radius:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainSection .searchContents{
+  color:#fff;
+  background-color:#0f0f11;
+  border-bottom:1px solid transparent;
+  border-radius:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainSection .topContents:nth-child(even)
+{
+  color:#fff;
+  background-color:#0f0f11;
+  border-bottom:1px solid #fff;
+  border-right:1px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainSection .topContents:nth-child(odd){
+  color:#fff;
+  background-color:#0f0f11;
+  border-bottom:1px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*.mainSection .contents img{
+  height:30vh;
+  width:22vw;
+  padding:2px;
+}*/
+.mainSection .FirstContent{
+  color:#fff;
+  /*background: linear-gradient(rgba(255, 255, 255, 0.747),rgba(255, 255, 255, 0.5));*/
+  background-color:#0f0f11;
+  border-bottom:1px solid transparent;
+  border-radius:20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.mainSection .secondContent{
+  color:#fff;
+  background-color:#0f0f11;
+  border-bottom:1px solid transparent;
+  border-radius:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainSection .thirdContent{
+  color:#fff;
+  background-color:#0f0f11;
+  border-bottom:1px solid transparent;
+  border-radius:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mainSection .previewContent{
+  color:#fff;
+  background-color:#0f0f11;
+  border-bottom:1px solid transparent;
+  border-radius:20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding:5px;
+}
+.mainSection .FirstContent img{
+  height:40vh;
+  width:40vw;
+  border:1px solid transparent;
+  border-radius: 20px;
+}
+.mainSection .secondContent img{
+  height:15vh;
+  width:13vw;
+  padding:2px;
+}
+.mainSection .thirdContent img{
+  height:15vh;
+  width:13vw;
+  padding:2px;
+}
+.topStories{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.mostViews{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.singleLine{
+  height:2px;
+  width:100%;
+  border-width:0;
+  color:#fff;
+  background-color:#fff;
+}

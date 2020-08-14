@@ -1,0 +1,89 @@
+@media screen and (max-width:375px){
+#newyorkimg{
+    margin-left:22px;
+}
+.header span{
+    font-size:30px;
+    margin-left:10px;
+}
+.search input{
+    width:260px;
+    margin-left:0px;
+}
+.search .btn{
+    width:260px;
+}
+.contents{
+    width:100%;
+}
+
+}
+@media screen and (min-width:400px){
+    #newyorkimg{
+        margin-left:32px;
+    }
+    .header span{
+        font-size:35px;
+        margin-left:50px;
+    }
+    .search input{
+        width:360px;
+        margin-left:0px;
+    }
+    .search .btn{
+        width:360px;
+    } 
+    .contents{
+        width:100%;
+    }
+}
+@media screen and (min-width:600px){
+    
+    .header span{
+        font-size:20px;
+    }
+    .header ul li a{
+        font-size:12px;
+    }
+    .search input{
+        width:300px;
+        margin-left:0px;
+    }
+    .search .btn{
+        width:150px;
+    } 
+    .search{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contents{
+        width:24%;
+    }
+}
+@media screen and (min-width:1000px){
+    .header span{
+        font-size:40px;
+        letter-spacing:3px;
+        font-family: 'Black Ops One'
+      }
+      #newyorkimg{
+        width:80%;
+        height:100%;
+      }
+    .search{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search .btn{
+        width:160px;
+    } 
+    .homeContents{
+        width:100%;
+    }
+    .header ul li a{
+        font-size:20px;
+    }
+}
+    
