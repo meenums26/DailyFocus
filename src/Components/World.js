@@ -47,7 +47,7 @@ class World extends Component{
         })
     }
     render(){
-        const{data,isLoading,previewData,isPreview}=this.state;
+        const{data,isLoading,previewData,preview,isPreview}=this.state;
         return(
             <>
              <h4 className="m-2 text-light"><b>World</b></h4>
@@ -111,17 +111,17 @@ class World extends Component{
                }
                </div>
             </div>:null}
-            {this.state.preview?<div className="mainSection container-fluid">
+            {preview?<div className="mainSection container-fluid">
                <div className="topStories col-xl-6">
                {!isPreview?(
                    <>
-                   <a href="#" onClick={this.handleStates} style={{color:"white",fontSize:"20px",textDecoration:"none"}}><b>&#8920; Back</b></a>  
+                   <span onClick={this.handleStates} style={{color:"white",fontSize:"20px",textDecoration:"none"}}><b>&#8920; Back</b></span>  
                   <div className="col-xl-12 col-lg-12 p-3 mb-1 text-white previewContent">
                        <h3 className="text-white"><b>{previewData.title}</b></h3>
                     <hr className="singleLine"></hr>
                   <h5><b><span>-------{previewData.byline}</span><br/>
                   <span>Published on : {previewData.published_date}</span></b></h5>
-                  {(previewData.multimedia[0])?<img className="previewImg" src={previewData.multimedia[0].url}/>:null}
+                  {(previewData.multimedia[0])?<img className="previewImg" src={previewData.multimedia[0].url} alt=""/>:null}
                   <p>{previewData.abstract}</p>
 
                </div>

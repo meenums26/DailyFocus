@@ -266,6 +266,9 @@ axios.get('https://api.nytimes.com/svc/topstories/v2/world.json',{params:{
                </div>
                    )
                    }
+                   else{
+                       return null;
+                   }
                })):
                <div></div>
                }
@@ -288,7 +291,9 @@ axios.get('https://api.nytimes.com/svc/topstories/v2/world.json',{params:{
                </div>
                    )
                    }
-                   
+                   else{
+                       return null;
+                   }
                })):
                <div></div>
                }
@@ -308,6 +313,9 @@ axios.get('https://api.nytimes.com/svc/topstories/v2/world.json',{params:{
                   </div>
                </div>
                    )
+                   }
+                   else{
+                       return null;
                    }
                })):
                <div></div>
@@ -329,6 +337,9 @@ axios.get('https://api.nytimes.com/svc/topstories/v2/world.json',{params:{
                </div>
                    )
                    }
+                   else{
+                       return null;
+                   }
                })):
                <div></div>
                }
@@ -338,7 +349,7 @@ axios.get('https://api.nytimes.com/svc/topstories/v2/world.json',{params:{
             </div>:null}
             {this.state.enable?<div className="mainSection container-fluid">  
                <div className="topStories col-xl-6">
-               <a href="#" onClick={this.handleReturn} style={{color:"white",fontSize:"20px",textDecoration:"none"}}><b>&#8920; Back</b></a><hr/>   
+               <span onClick={this.handleReturn} style={{color:"white",fontSize:"20px",textDecoration:"none"}}><b>&#8920; Back</b></span><hr/>   
                {this.state.single?<><h4 className="text-white">Related items</h4>
                <hr className="singleLine"></hr></>:<div className="col-xl-12 text-white text-center"><b><h2>{this.state.message}</h2></b></div> }
                {!isResults?(results.map(article=>{
@@ -346,12 +357,15 @@ axios.get('https://api.nytimes.com/svc/topstories/v2/world.json',{params:{
                    return(
                 <div className="col-xl-12 col-lg-12 p-3 mb-1 searchContents">
                   <div className="col-xl-12">
-                  <h5><b><a href="#">{article.headline.main}</a></b></h5>
+                  <h5><b><span>{article.headline.main}</span></b></h5>
                   <p>{article.abstract}</p>
                   <p>{article.lead_paragraph}</p>
                   </div>
                </div>
                    )
+                   }
+                   else{
+                       return null;
                    }
                })):
                 <div></div>
@@ -365,13 +379,13 @@ axios.get('https://api.nytimes.com/svc/topstories/v2/world.json',{params:{
                  
                {!isPreview?(
                   <>
-                   <a href="#" onClick={this.handleStates} style={{color:"white",fontSize:"20px",textDecoration:"none"}}><b>&#8920; Back</b></a>  
+                   <span onClick={this.handleStates} style={{color:"white",fontSize:"20px",textDecoration:"none"}}><b>&#8920; Back</b></span>  
                   <div className="col-xl-12 col-lg-12 p-3 mb-1 text-white previewContent">
                        <h3 className="text-white"><b>{previewData.title}</b></h3>
                     <hr className="singleLine"></hr>
                   <h5><b><span>-------{previewData.byline}</span><br/>
                   <span>Published on : {previewData.published_date}</span></b></h5>
-                  {(previewData.multimedia[0]!==0)?<img className="previewImg" src={previewData.multimedia[0].url}/>:null}
+                  {(previewData.multimedia[0]!==0)?<img className="previewImg" src={previewData.multimedia[0].url} alt=""/>:null}
                   <p>{previewData.abstract}</p>
 
                </div>
@@ -386,7 +400,7 @@ axios.get('https://api.nytimes.com/svc/topstories/v2/world.json',{params:{
                  
                {!isRePreview?(
                   <>
-                   <a href="#" onClick={this.handleStates} style={{color:"white",fontSize:"20px",textDecoration:"none"}}><b>&#8920; Back</b></a>  
+                   <span onClick={this.handleStates} style={{color:"white",fontSize:"20px",textDecoration:"none"}}><b>&#8920; Back</b></span>  
                   <div className="col-xl-12 col-lg-12 p-3 mb-1 text-white previewContent">
                        <h3 className="text-white"><b>{previewData.title}</b></h3>
                     <hr className="singleLine"></hr>

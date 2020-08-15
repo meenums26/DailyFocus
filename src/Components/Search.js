@@ -34,6 +34,9 @@ class Search extends Component{
                </div>
                    )
                    }
+                   else{
+                       return null;
+                   }
                })):
                <div></div>
                }
