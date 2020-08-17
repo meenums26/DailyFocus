@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/DailyFocus/static/css/main.f9d588cf.chunk.css",
+    "main.js": "/DailyFocus/static/js/main.6784b801.chunk.js",
+    "main.js.map": "/DailyFocus/static/js/main.6784b801.chunk.js.map",
+    "runtime-main.js": "/DailyFocus/static/js/runtime-main.9ef67cf4.js",
+    "runtime-main.js.map": "/DailyFocus/static/js/runtime-main.9ef67cf4.js.map",
+    "static/css/2.11829350.chunk.css": "/DailyFocus/static/css/2.11829350.chunk.css",
+    "static/js/2.59f2d219.chunk.js": "/DailyFocus/static/js/2.59f2d219.chunk.js",
+    "static/js/2.59f2d219.chunk.js.map": "/DailyFocus/static/js/2.59f2d219.chunk.js.map",
+    "index.html": "/DailyFocus/index.html",
+    "precache-manifest.cb84f46a7fe38cde1ee1dc1f8b418b37.js": "/DailyFocus/precache-manifest.cb84f46a7fe38cde1ee1dc1f8b418b37.js",
+    "service-worker.js": "/DailyFocus/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/DailyFocus/static/css/2.11829350.chunk.css.map",
+    "static/css/main.f9d588cf.chunk.css.map": "/DailyFocus/static/css/main.f9d588cf.chunk.css.map",
+    "static/js/2.59f2d219.chunk.js.LICENSE.txt": "/DailyFocus/static/js/2.59f2d219.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/DailyFocus/static/media/lerone-pieters-XnBrDrAJaoo-unsplash.c1f4fbc7.jpg",
+    "static/media/newyork.png": "/DailyFocus/static/media/newyork.9c233d75.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9ef67cf4.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.59f2d219.chunk.js",
+    "static/css/main.f9d588cf.chunk.css",
+    "static/js/main.6784b801.chunk.js"
+  ]
+}
